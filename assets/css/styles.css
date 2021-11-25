@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Arial", Times, sans-serif;
+    letter-spacing: 0.7px;
 }
 
 /* 
@@ -18,12 +20,57 @@
 
 #nav li{
     display: inline-block;
+     
+
+}
+
+#nav li:last-child{
+    border-right: 1px solid #363636;
+    position: relative;
 }
 #nav li a {
     color: #6f6f6f;
     text-decoration: none;
     line-height: 40px;
+    font-size: 12px;
+    font-weight: 500;
 }
+.nav_language{
+    margin-left: 205px;
+    margin-right: 15px;
+    padding: 0px 30px 0px 0px; 
+    border-right: 1px solid #363636;
+
+}
+
+#nav .fa-caret-down{
+    line-height: 40px;
+    font-size: 14px;
+    position: absolute;
+    top: -4px;
+    padding: 0px 0px 0px 7px;
+    
+    
+}
+
+.unit_curency{
+    margin-right: 550px;
+    padding: 0px 15px 0px 0px;
+}
+
+.nav_format{
+    padding: 0 20px;
+    border-left: 1px solid #363636;
+    
+}
+.nav_format_icon{
+    padding: 0 4px 0 0;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+
+
 
 #subnav li{
     display: none;
