@@ -5,61 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel= "stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="contain">
-        <div id="header">
-            <ul id="nav">
-                <li>
-                    <a href="" class="nav_language">
-                        <img src="./assets/img/english.jpeg" class="nav_img">
-                        English
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">ENGLISH</a></li>
-                        <li><a href="">RUSIAN</a></li>
-                        <li><a href="">BRAZIL</a></li>
-                        <li><a href="">FRANCE</a></li>
+    <div class="contain">
+        <div class="header">
+            <div class="grid">
+                <nav class="header_navbar">
+                    <ul class="header__navbar-list ">
+                        <li class="header__navbar-item header__navbar-selecter">
+                            <img src="./assets/img/english.jpeg" class="nav_img">
+                            English
+                            <i class="fa fa-caret-down"></i>
+                            <ul class="header__subnav">
+                                <li>ENGLISH</li>
+                                <li>RUSIAN</li>
+                                <li>BRAZIL</li>
+                                <li>FRANCE</li>
+                            </ul> 
+                        </li>
+                        <li class="header__navbar-item header__navbar-selecter">    
+                            USD
+                            <i class="fa fa-caret-down"></i>
+                            <ul class="header__subnav">
+                                <li class="header__subnav-item">usd</li>
+                                <li class="header__subnav-item">eur</li>
+                            </ul> 
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="" class="unit_curency">
-                        USD
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">usd</a></li>
-                        <li><a href="">eur</a></li>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--wall">
+                            
+                            <a href="" class="header__navbar-item-link">
+                                <i class="fas fa-user header_navbar-icon"></i>
+                                My Account
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--wall">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="far fa-heart header_navbar-icon"></i>
+                                Wishlist
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--wall">
+                            <a href="" class="header__navbar-item-link" >
+                                <i class="far fa-check-square header_navbar-icon"></i>
+                                Checkout 
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--wall" >
+                            <a href="" class="header__navbar-item-link">
+                                <i class="ti-key header_navbar-icon"></i>
+                                Login
+                            </a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav_format">
-                    <i class="fas fa-user nav_format_icon"></i>
-                    <a href="" >
-                        My Account
-                    </a>
-                </li>
-                <li class="nav_format">
-                    <i class="far fa-heart nav_format_icon"></i>
-                    <a href="">
-                        Wishlist
-                    </a>
-                </li>
-                <li class="nav_format">
-                    <i class="far fa-check-square nav_format_icon"></i>
-                    <a href="" >
-                        Checkout
-                    </a>
-                </li>
-                <li class="nav_format">
-                    <i class="ti-key nav_format_icon"></i>
-                    <a href="" >
-                        Login
-                    </a>
-                </li>
-            </ul>
+                    
+                </nav>
+            </div>
             
         </div>
 

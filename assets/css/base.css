@@ -1,0 +1,32 @@
+:root{
+    __white-color: #fff;
+    __black-color: #000;
+    __text-color: #333;
+}
+*{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0px;
+}
+
+html{
+    font-size: 62.5%; /* = 1rem, 100% = 1.6rem */ 
+    line-height: 1.2rem;
+    font-family: 'Roboto', sans-serif; /* if can't find font roboto then find san-serif */
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+ .grid__full-width{
+     width:100%;
+ }
+ .grid__row{
+     display: flex;
+     flex-wrap: wrap;
+ }

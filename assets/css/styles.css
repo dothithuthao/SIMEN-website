@@ -1,98 +1,61 @@
-/* Reset CSS */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Arial", Times, sans-serif;
-    letter-spacing: 0.7px;
-}
-
-/* 
-1 vị trí ríí
-2 kích thước 
-3 màu sắc
-4 kiểu dáng
-*/
-#header {
+.header {
     height:40px;
     background-color: #222;
 }
 
-#nav li{
-    display: inline-block;
-    position: relative;
-
+.header_navbar{
+    display: flex;
+    justify-content: space-between;
 }
-
-#nav li:last-child{
-    border-right: 1px solid #363636;
+.header__navbar-list{
+    list-style: none;
     
 }
-#nav li a {
+
+.header__navbar-item, .header__navbar-item-link{
     color: #6f6f6f;
     text-decoration: none;
-    line-height: 40px;
-    font-size: 12px;
-    font-weight: 500;
-    
-
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 20px;
+    position: relative;
 }
 
-#nav li a:hover {
-    color: #e34444;
-    cursor: pointer;
+.header__navbar-selecter{
+    margin-right: 30px;
 }
 
-
-.nav_language{
-    margin-left: 205px;
-    margin-right: 15px;
-    padding: 0px 30px 0px 0px; 
-    border-right: 1px solid #363636;
-
-}
-
-#nav .fa-caret-down{
-    line-height: 40px;
-    font-size: 14px;
-    position: absolute;
-    top: -4px;
-    padding: 0px 0px 0px 7px;
-    
-    
-}
-
-.unit_curency{
-    margin-right: 550px;
-    padding: 0px 15px 0px 0px;
-}
-
-.nav_format{
+.header__navbar-item--wall{
     padding: 0 20px;
-    border-left: 1px solid #363636;
     
 }
-.nav_format_icon{
-    padding: 0 4px 0 0;
-    line-height: 40px;
-    font-weight: 500;
-    cursor: pointer;
-    font-size: 12px;
-    color: #6f6f6f;
-}
 
 
-
-
-#nav .subnav {
+.header__navbar-item--wall::after{
+    content: "";
+    display: block;
     position: absolute;
-    background-color: #fff;
-    list-style-type: none;
-}
-#nav .subnav li{
-    display:list-item;
-    color: #6f6f6f;
+    height:40px;
+    border-left: 1px solid #363636;
+    top: -10px;
+    left: 0px;     
+} 
 
+nav:last-child li:last-child::after {
+    border-right: 1px solid #363636;
+    height: 40px;
+    top: -10px;
+    right: 0px;
+}
+
+.header_navbar-icon{
+    padding-right:12px;
+}
+
+
+.header__subnav{
+    display: none;
 }
 
 #slider {
