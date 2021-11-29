@@ -26,6 +26,11 @@
     position: relative;
 }
 
+.header__navbar-img{
+    margin-right: 4px;
+    
+}
+
 .header__navbar-icon-select::before{
     content: "";
     display: block;
@@ -79,11 +84,11 @@ nav:first-child li:first-child{
 }
 
 
-.header__subnav{
+.header__subnav-select{
     /* display: none; */
     position: absolute;
     list-style-type: none;
-    Width: 100px;
+    Width: 96px;
     background-color: var(--white-color);
     padding: 0;
 }
@@ -99,6 +104,14 @@ nav:first-child li:first-child{
     font-weight:400;
 
 }
+
+.header__subnav-arrow{
+    position: absolute;
+    border:10px solid;
+    top: 22px;
+    left: 16px;
+    border-color: transparent transparent var(--white-color) transparent;
+} 
 
 #slider {
     height: 1000px;
