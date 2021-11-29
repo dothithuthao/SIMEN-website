@@ -31,7 +31,7 @@
     display: block;
     position: absolute;
     margin-right: 7px;
-    margin-top: -18px;;
+    margin-top: -16px;;
     
 
 }
@@ -80,7 +80,24 @@ nav:first-child li:first-child{
 
 
 .header__subnav{
-    display: none;
+    /* display: none; */
+    position: absolute;
+    list-style-type: none;
+    Width: 100px;
+    background-color: var(--white-color);
+    padding: 0;
+}
+
+.header__subnav-item{
+    padding: 5px;
+    font-size:1.2rem;
+    box-sizing: content-box;
+    height:20px;
+    display:flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight:400;
+
 }
 
 #slider {
