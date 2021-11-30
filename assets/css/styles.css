@@ -6,14 +6,13 @@
 .header_navbar{
     display: flex;
     justify-content: space-between;
-    
-    
 }
+
 .header__navbar-list{
     list-style: none;
     padding-left: 0;
     margin: auto 0px ; 
-    
+    display: flex; 
 }
 
 .header__navbar-item, .header__navbar-item-link{
@@ -28,7 +27,6 @@
 
 .header__navbar-img{
     margin-right: 4px;
-    
 }
 
 .header__navbar-icon-select::before{
@@ -36,26 +34,22 @@
     display: block;
     position: absolute;
     margin-right: 7px;
-    margin-top: -16px;;
-    
-
+    margin-top: -14px;
+    margin-left: 3px;
 }
 
-.header__navbar-selecter{
+.header__navbar-seperate{
     border-left: 1px solid #363636;
     box-sizing: border-box;
     position: absolute;
     height: 10px;
     left: -15px;
-    top: 15px;
-    
+    top: 15px; 
 }
 
 .header__navbar-item--wall{
     margin: 0 20px;
-    
 }
-
 
 .header__navbar-item--wall::after{
     content: "";
@@ -71,47 +65,68 @@ nav:last-child li:last-child::after {
     border-right: 1px solid #363636;
     height: -20px;
     top: 0px;
-    right: -20px;
-    
+    right: -20px;   
 }
 
 nav:first-child li:first-child{
-    margin-right: 34px; 
+    margin-right: 40px; 
 }
 
 .header_navbar-icon{
     margin-right:12px;
 }
 
-
-.header__subnav-select{
-    /* display: none; */
-    position: absolute;
-    list-style-type: none;
-    Width: 96px;
-    background-color: var(--white-color);
+/* css for subnav///////////////////////////////////////////////////////////////////////// */
+.header__subnav{
     padding: 0;
+    position: absolute;
+}
+.header__subnav-language-item{
+    height: 20px;
+    width:86px;
+    background-color: var(--white-color);
+    list-style-type: none;
+    padding: 15px 0 15px 10px;
+    box-sizing: content-box;
+    line-height: 20px;
 }
 
-.header__subnav-item{
-    padding: 5px;
-    font-size:1.2rem;
-    box-sizing: content-box;
-    height:20px;
-    display:flex;
-    align-items: center;
-    text-transform: uppercase;
-    font-weight:400;
+.header__subnav-language-item:hover, .header__subnav-unit-item:hover{
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
 
+.header__subnav-text{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.header__subnav-unit-item{
+    height: 20px;
+    width:86px;
+    background-color: var(--white-color);
+    list-style-type: none;
+    padding: 5px;
+    box-sizing: content-box;
+    line-height: 20px;
+    text-transform: uppercase;
 }
 
 .header__subnav-arrow{
     position: absolute;
     border:10px solid;
     top: 22px;
-    left: 16px;
+    left: 20px;
     border-color: transparent transparent var(--white-color) transparent;
 } 
+.header__subnav-arrow-unit{
+    position: absolute;
+    border:10px solid;
+    top: 22px;
+    left: 22px;
+    border-color: transparent transparent var(--white-color) transparent;
+}
 
 #slider {
     height: 1000px;
