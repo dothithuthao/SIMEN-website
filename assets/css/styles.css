@@ -25,6 +25,15 @@
     position: relative;
 }
 
+.header__navbar-item-link:hover{
+    color: #e34444;
+    cursor: pointer;
+}
+
+.header__navbar-item-link:hover i {
+    color: #6f6f6f;
+}
+
 .header__navbar-img{
     margin-right: 4px;
 }
@@ -61,12 +70,15 @@
     left: -22px;    
 } 
 
-nav:last-child li:last-child::after {
+.header__navbar-item--wall-right::before{
+    content: "";
+    display: block;
+    position: absolute;
     border-right: 1px solid #363636;
-    height: -20px;
+    height: 40px;
     top: 0px;
     right: -20px;   
-}
+} 
 
 nav:first-child li:first-child{
     margin-right: 40px; 
