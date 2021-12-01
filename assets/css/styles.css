@@ -98,7 +98,7 @@ nav:first-child li:first-child{
 }
 
 /* css for subnav///////////////////////////////////////////////////////////////////////// */
-.header__subnav-language{
+.header__subnav-language, .header__subnav-currency-unit{
     position: absolute;
     background-color: var(--white-color);
     width:96px;
@@ -141,11 +141,18 @@ nav:first-child li:first-child{
     color:red;
 }
 
-.header__subnav-language-list{
-    padding-left: 0;
+.header__subnav-currency-unit::after{
+    content: "";
+    position: absolute;
+    border:10px solid;
+    top: -18px;
+    left: 22px;
+    border-color: transparent transparent var(--white-color) transparent;
 }
 
-
+.header__subnav-language-list, .header__subnav-currency-unit-list{
+    padding: 0;
+}
 
 .header__subnav-language-item{
     
@@ -155,7 +162,7 @@ nav:first-child li:first-child{
     line-height:19px;
 }
 
-.header__subnav-language-item:hover{
+.header__subnav-language-item:hover, .header__subnav-currency-unit-item:hover{
     background-color: #f5f5f5;
     cursor: pointer;
 }
@@ -168,12 +175,24 @@ nav:first-child li:first-child{
     top: 1px;
 }
 
-.header__subnav-language-text{
+.header__subnav-language-text, .header__subnav-currency-name {
     font-size: 1.2rem;
     color: var(--text-color);
     font-weight: 400;
     line-height: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+.header__subnav-currency-unit-item{
+    padding:5px;
+    width: 100%;
+    list-style-type: none;
+    line-height:19px;
+}  
+
+
+
 
 
 /* .header__subnav-language-list{
