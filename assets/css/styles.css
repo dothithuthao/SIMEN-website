@@ -16,22 +16,23 @@
 }
 
 .header__navbar-item, .header__navbar-item-link{
-    color: #6f6f6f;
+    color: #f5f5f5;
     text-decoration: none;
     display: inline-block;
     font-size: 1.2rem;
     font-weight: 400;
     line-height:40px;
     position: relative;
+    cursor: pointer;
 }
 
-.header__navbar-language-item:hover .header__subnav-language-item{ 
+.header__navbar-language-item:hover .header__subnav-language{ 
     display: block;
     
 }
 
-.header__navbar_currency-item{
-
+.header__navbar-currency-item:hover .header__subnav-currency-unit{
+    display: block;
 }
 
 .header__navbar-item-link:hover{
@@ -102,23 +103,24 @@ nav:first-child li:first-child{
     position: absolute;
     background-color: var(--white-color);
     width:96px;
-    transform-origin: translate3d(0, 25px, 0);
+    transform-origin: left top;
     animation: RiseUp ease-in 0.3s;
     will-change: opacity, transform;
-    /* display:none; */
+    display:none;
+    border: 2px solid #f5f5f5;
 }
 
 @keyframes RiseUp {
-    from { 
-        transform: scale(0);
+    from {
+        top: 50px;
         opacity: 0;
     }
 
     to {
-        transform: scale(1);
+        top: 40px;
         opacity: 1;
-
     }
+        
 }
 
 .header__subnav-language::after{
@@ -191,26 +193,6 @@ nav:first-child li:first-child{
     line-height:19px;
 }  
 
-
-
-
-
-/* .header__subnav-language-list{
-    padding: 0;
-    position: absolute;
-}
-.header__subnav-language-item{
-    height: 20px;
-    width:86px;
-    background-color: var(--white-color);
-    list-style-type: none;
-    padding: 15px 0 15px 10px;
-    box-sizing: content-box;
-    line-height: 20px;
-    animation: RiseUp ease-in 0.3s;
-    
-}
-
 .header__subnav-language-item:hover, .header__subnav-currency-unit-item:hover{
     background-color: #f5f5f5;
     cursor: pointer;
@@ -239,22 +221,58 @@ nav:first-child li:first-child{
     top: 22px;
     left: 22px;
     border-color: transparent transparent var(--white-color) transparent;
-} */
+} 
 
-#slider {
-    height: 1000px;
-    background-color: #333;
+/* CSS slider/////////////////////////////////////////////////////////////////////////////// */
+.slider {
+    display: flex;
+    justify-content: space-between;
+    height: 118px;
+    width:100%;
+    background-color: var(--white-color);
+}
+
+.slider__contain{
+    display: flex;
+}
+
+.slider__logo-link{
+
+}
+
+.slider__logo-img{
+
+}
+
+.slider__list{
     
 }
 
-#slidebar {
+.slider__list-icon{
 
 }
 
-#content {
+.slider_list-item{
 
 }
 
-#footer {
+.slider__list-item-name{
+
+}
+
+.slider_list-item-dec{
+
+}
+
+
+.slidebar {
+
+}
+
+.content {
+
+}
+
+.footer {
 
 }
