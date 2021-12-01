@@ -25,6 +25,15 @@
     position: relative;
 }
 
+.header__navbar-language-item:hover .header__subnav-language-item{ 
+    display: block;
+    
+}
+
+.header__navbar_currency-item{
+
+}
+
 .header__navbar-item-link:hover{
     color: #e34444;
     cursor: pointer;
@@ -89,7 +98,85 @@ nav:first-child li:first-child{
 }
 
 /* css for subnav///////////////////////////////////////////////////////////////////////// */
-.header__subnav{
+.header__subnav-language{
+    position: absolute;
+    background-color: var(--white-color);
+    width:96px;
+    transform-origin: translate3d(0, 25px, 0);
+    animation: RiseUp ease-in 0.3s;
+    will-change: opacity, transform;
+    /* display:none; */
+}
+
+@keyframes RiseUp {
+    from { 
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+
+.header__subnav-language::after{
+    content: "";
+    position: absolute;
+    border:10px solid;
+    top: -18px;
+    left: 18px;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.header__subnav-language::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width:96px;
+    right:0;
+    top:-15px;
+    height:20px;
+    color:red;
+}
+
+.header__subnav-language-list{
+    padding-left: 0;
+}
+
+
+
+.header__subnav-language-item{
+    
+    padding:7px 0 7px 10px;
+    width: 100%;
+    list-style-type: none;
+    line-height:19px;
+}
+
+.header__subnav-language-item:hover{
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.header__subnav-language-img{
+    width: 16px;
+    height: 12px;
+    margin-right: 2px;
+    position: relative;
+    top: 1px;
+}
+
+.header__subnav-language-text{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+
+/* .header__subnav-language-list{
     padding: 0;
     position: absolute;
 }
@@ -101,20 +188,22 @@ nav:first-child li:first-child{
     padding: 15px 0 15px 10px;
     box-sizing: content-box;
     line-height: 20px;
+    animation: RiseUp ease-in 0.3s;
+    
 }
 
-.header__subnav-language-item:hover, .header__subnav-unit-item:hover{
+.header__subnav-language-item:hover, .header__subnav-currency-unit-item:hover{
     background-color: #f5f5f5;
     cursor: pointer;
 }
 
-.header__subnav-text{
+.header__subnav-currency-unit-name{
     text-decoration: none;
     font-size: 1.2rem;
     color: #888;
 }
 
-.header__subnav-unit-item{
+.header__subnav-currency-unit-item{
     height: 20px;
     width:86px;
     background-color: var(--white-color);
@@ -125,20 +214,13 @@ nav:first-child li:first-child{
     text-transform: uppercase;
 }
 
-.header__subnav-arrow{
-    position: absolute;
-    border:10px solid;
-    top: 22px;
-    left: 20px;
-    border-color: transparent transparent var(--white-color) transparent;
-} 
 .header__subnav-arrow-unit{
     position: absolute;
     border:10px solid;
     top: 22px;
     left: 22px;
     border-color: transparent transparent var(--white-color) transparent;
-}
+} */
 
 #slider {
     height: 1000px;
