@@ -123,7 +123,7 @@ nav:first-child li:first-child{
         
 }
 
-.header__subnav-language::after{
+.header__subnav-language::before{
     content: "";
     position: absolute;
     border:10px solid;
@@ -132,15 +132,14 @@ nav:first-child li:first-child{
     border-color: transparent transparent var(--white-color) transparent;
 }
 
-.header__subnav-language::before{
+.header__subnav-language::after, .header__subnav-currency-unit::before{
     content: "";
-    display: block;
     position: absolute;
     width:96px;
-    right:0;
-    top:-15px;
-    height:20px;
-    color:red;
+    right:-2px;
+    top:-30px;
+    height:30px;
+    /* background-color:red; */
 }
 
 .header__subnav-currency-unit::after{
@@ -151,6 +150,7 @@ nav:first-child li:first-child{
     left: 22px;
     border-color: transparent transparent var(--white-color) transparent;
 }
+
 
 .header__subnav-language-list, .header__subnav-currency-unit-list{
     padding: 0;
@@ -232,18 +232,22 @@ nav:first-child li:first-child{
     background-color: var(--white-color);
 }
 
-.slider__contain{
+.slider__logo{
     display: flex;
+    align-items: center;
 }
 
 .slider__logo-link{
-
+    
 }
 
 .slider__logo-img{
-
+    
 }
 
+.slider__contain{
+    display: flex;
+}
 .slider__list{
     
 }
