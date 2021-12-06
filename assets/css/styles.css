@@ -326,6 +326,60 @@ display: flex;
 justify-content: space-between;
 }
 
+.slidebar__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.slidebar__list-item{
+    display:flex;
+    padding:0 20px 0 0;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+    margin-left: 10px; 
+}
+
+.slidebar__list li:first-child{
+    margin-left: 0;
+}
+
+.slidebar__list-item:hover .slidebar__list-item-link{
+    color: #e34444;
+}
+
+.slidebar__list-item-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+
+}
+
+.slidebar__right{
+    display: flex;
+
+}
+
+.slidebar__right-search{
+
+}
+
+.slidebar__right-cart{
+
+}
+
+.slidebar__right-number{
+
+}
+
+.slidebar__right-unit{
+
+}
+
+
 .content {
 
 }
