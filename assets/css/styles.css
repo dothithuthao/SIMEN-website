@@ -319,8 +319,11 @@ nav:first-child li:first-child{
 
 
 .slidebar {
-height: 1000px;
+height: 56px;
+width: 100%;
 background-color: bisque;
+display: flex;
+justify-content: space-between;
 }
 
 .content {
