@@ -364,7 +364,7 @@ justify-content: space-between;
 }
 
 .slidebar__right-search{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 56px;
     color: #666;
     width:50px;
@@ -374,13 +374,12 @@ justify-content: space-between;
 
 
 .slidebar__right-cart{
-padding-left: 6px;
-font-size: 1.6rem;
-    line-height: 56px;
+    display: inline-block;
+    text-decoration: none;
     color: #666;
-    width:50px;
-    text-align: center;
-    display:inline-block;
+    font-size: 1.2rem;
+    line-height: 56px;
+
 
 }
 
@@ -389,7 +388,6 @@ font-size: 1.6rem;
 }
 
 .slidebar__right-unit{
-display:inline-block;
 }
 
 
