@@ -321,7 +321,7 @@ nav:first-child li:first-child{
 .slidebar {
 height: 56px;
 width: 100%;
-background-color: bisque;
+/* background-color: bisque; */
 display: flex;
 justify-content: space-between;
 }
@@ -364,7 +364,7 @@ justify-content: space-between;
 }
 
 .slidebar__right-search{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 56px;
     color: #666;
     width:50px;
@@ -379,16 +379,24 @@ justify-content: space-between;
     color: #666;
     font-size: 1.2rem;
     line-height: 56px;
-
-
+    padding-left: 6px;
 }
 
-.slidebar__right-number{
+.slidebar__right-cart > i{
+    margin-right: 5px;
+    width: 40px;
+    text-align: right;
+    border-left: 1px solid #eaeaea;
+    height:20px;
+    line-height:20px;
+    align-items: center;
     
 }
 
-.slidebar__right-unit{
+.slidebar__right-number{
+    color: #e34444;
 }
+
 
 
 .content {
