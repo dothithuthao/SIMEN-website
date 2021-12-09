@@ -529,13 +529,15 @@ position: relative;
 }
 
 .slidebar__furniture-col-item > h4 {
-    width: 80%;
+    width: 90%;
     font-size: 1.4rem;
     text-transform: uppercase;
     padding-bottom: 6px;
     border-bottom: 1px solid #eaeaea;
     color: #333;
     font-weight: bold;
+    margin: 10px 15px 14px;
+    line-height: 16px;
 }
 
 .slidebar__table-list{
@@ -549,6 +551,12 @@ position: relative;
 
 .slidebar__table-list-link{
     text-decoration: none;
+    padding: 2px 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-color);
+    
 }
 
 /* /////////CSS slidebar__banner//////////////////////////////////////////////////// */
