@@ -437,18 +437,7 @@ position: relative;
 
 }
 
-@keyframes RiseUpSlidebar {
-    from {
-        top: 80px;
-        opacity: 0;
-    }
 
-    to {
-        top: 50px;
-        opacity: 1;
-    }
-        
-}
 
 .slidebar__home-sublist::before{
     content: "";
@@ -513,8 +502,12 @@ position: relative;
     border: 1px solid #eaeaea;
     z-index: 1;
     display:none;
+    transform-origin: left top;
+    animation: RiseUpSlidebar ease-in 0.3s;
+    will-change: opacity, transform;
     
 }
+
 
 .slidebar__furniture-sublist::before{
     content: "";
@@ -567,6 +560,8 @@ position: relative;
     list-style-type: none;
 }
 
+
+
 .slidebar__table-list-link{
     text-decoration: none;
     padding: 2px 15px;
@@ -575,6 +570,10 @@ position: relative;
     line-height: 24px;
 
     color: var(--text-color);
+}
+
+.slidebar__table-list-link:hover{
+    color:#e34444;
 }
 
 .slidebar_list-item-furniture:hover .slidebar__furniture-sublist{

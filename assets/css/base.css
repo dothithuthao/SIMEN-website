@@ -32,4 +32,15 @@ html{
  }
 
  /* Animation */
- 
+ @keyframes RiseUpSlidebar {
+    from {
+        top: 80px;
+        opacity: 0;
+    }
+
+    to {
+        top: 50px;
+        opacity: 1;
+    }
+        
+}
