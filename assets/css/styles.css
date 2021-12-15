@@ -602,7 +602,65 @@ position: relative;
 
 }
 
+/* ////CSS Slidebar__bedroom////////////////////////////////////////////////////////////// */
+.slidebar__bedroom{
+    max-width:100%;
+}
 
+.slidebar__bedroom-sublist{
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    left:0px;
+    top:50px;
+    z-index: 1;
+    padding:20px 15px 30px;
+    width: 100%;
+   justify-content: space-evenly;
+    
+    
+    
+}
+
+.slidebar_bedroom-sublist-item{
+    display: flex;
+    list-style-type: none;
+    padding: 10px 15px 0;
+    
+
+
+}
+
+.slidebar_bedroom-item-contain{
+    width:255px;
+}
+
+.slidebar_bedroom-item-contain a img{
+    width:100%;
+    margin-bottom: 18px;
+
+}
+
+.slidebar__bedroom-item-title {
+    width:100%;
+    margin:0 0 10px;
+
+}
+.slidebar__bedroom-item-title a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.slidebar__bedroom-item-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666;
+    line-height: 2rem;
+}
 
 
 
