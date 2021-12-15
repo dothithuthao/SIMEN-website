@@ -509,6 +509,8 @@ position: relative;
 }
 
 
+
+
 .slidebar__furniture-sublist::before{
     content: "";
     position: absolute;
@@ -603,11 +605,9 @@ position: relative;
 }
 
 /* ////CSS Slidebar__bedroom////////////////////////////////////////////////////////////// */
-.slidebar__bedroom{
-    max-width:100%;
-}
 
 .slidebar__bedroom-sublist{
+    max-width:100%;
     display: flex;
     position: absolute;
     background-color: #fff;
@@ -618,10 +618,35 @@ position: relative;
     padding:20px 15px 30px;
     width: 100%;
    justify-content: space-evenly;
-    
-    
+   transform-origin: left top;
+   animation: RiseUpSlidebar ease-in 0.3s;
+   will-change: opacity, transform;
+   display: none;
+}
+
+.slidebar__bedroom-sublist::before{
+    content: "";
+    position: absolute;
+    border:11px solid;
+    top: -21px;
+    left: 365px;
+    border-color: transparent transparent #eaeaea transparent;
     
 }
+.slidebar__bedroom-sublist::after{
+    content: "";
+    position: absolute;
+    border:10px solid;
+    top: -19px;
+    left: 366px;
+    border-color: transparent transparent #fff transparent;
+    
+}
+
+.slidebar__list-item-bedroom:hover .slidebar__bedroom-sublist{
+    display: block;
+    display: flex;
+} 
 
 .slidebar_bedroom-sublist-item{
     display: flex;
@@ -645,14 +670,19 @@ position: relative;
 .slidebar__bedroom-item-title {
     width:100%;
     margin:0 0 10px;
-
 }
+
+
 .slidebar__bedroom-item-title a {
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
+}
+
+.slidebar__bedroom-item-title a:hover{
+    color: #e34444;
 }
 
 .slidebar__bedroom-item-text {
