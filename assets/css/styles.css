@@ -692,6 +692,93 @@ position: relative;
     line-height: 2rem;
 }
 
+/* /////////CSS for sublist of shop/////////////////////////////// */
+.slidebar__shop-sublist{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    z-index: 1;
+    display:none; 
+    transform-origin: left top;
+    animation: RiseUpSlidebar ease-in 0.3s;
+    will-change: opacity, transform;
+    
+}
+
+.slidebar__shop-sublist::before{
+    content: "";
+    position: absolute;
+    border:11px solid;
+    top: -21px;
+    left: 523px;
+    border-color: transparent transparent #eaeaea transparent;
+    
+}
+.slidebar__shop-sublist::after{
+    content: "";
+    position: absolute;
+    border:10px solid;
+    top: -19px;
+    left: 524px;
+    border-color: transparent transparent #fff transparent;
+    
+}
+
+.slidebar__shop-sublist-col{
+    display: flex;
+    padding: 20px 15px 20px 15px;
+    margin-left: 0;
+
+}
+
+.slidebar__shop-col-item{
+    width: 33.33%;
+    list-style-type: none;
+}
+
+.slidebar__shop-col-item > h4 {
+    width: 92%;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eaeaea;
+    color: #333;
+    font-weight: bold;
+    margin: 10px 15px 14px;
+}
+
+.slidebar__shop-list{
+    margin-left: 0;
+    padding: 0;
+}
+
+.slidebar__shop-list-item{
+    list-style-type: none;
+}
+
+
+
+.slidebar__shop-list-link{
+    text-decoration: none;
+    padding: 2px 15px;
+    font-size: 1.2rem;
+    line-height: 24px;
+    font-weight: 400;
+
+    color: #333;
+}
+
+.slidebar__shop-list-link:hover{
+    color:#e34444;
+}
+
+.slidebar_list-item-shop:hover .slidebar__shop-sublist{
+      display: block;
+}
+
 
 
 
