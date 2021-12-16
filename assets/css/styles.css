@@ -434,7 +434,6 @@ position: relative;
     transform-origin: left top;
     animation: RiseUpSlidebar ease-in 0.3s;
     will-change: opacity, transform;
-
 }
 
 
@@ -745,7 +744,7 @@ position: relative;
     text-transform: uppercase;
     padding-bottom: 6px;
     border-bottom: 1px solid #eaeaea;
-    color: #333;
+    color: #555;
     font-weight: bold;
     margin: 10px 15px 14px;
 }
@@ -779,8 +778,71 @@ position: relative;
       display: block;
 }
 
+/* ////////////CSS for sublist of shop ///////////////////////// */
 
 
+.slidebar__blog-sublist{
+    position: absolute;
+    background-color: #fff;
+    width: 220px;
+    padding:15px 0;
+    top:50px;
+    list-style-type: none;
+    border: 1px solid #eaeaea;
+    z-index: 1;
+    display: none; 
+    transform-origin: left top;
+    animation: RiseUpSlidebar ease-in 0.3s;
+    will-change: opacity, transform;
+}
+
+
+
+.slidebar__blog-sublist::before{
+    content: "";
+    position: absolute;
+    border:11px solid;
+    top: -21px;
+    left: 6px;
+    border-color: transparent transparent #eaeaea transparent;
+    
+}
+.slidebar__blog-sublist::after{
+    content: "";
+    position: absolute;
+    border:10px solid;
+    top: -19px;
+    left: 7px;
+    border-color: transparent transparent #fff transparent;
+    
+}
+
+.slidebar__blog-item{   
+    width:100%;
+    padding:4px 20px; 
+}
+
+.slidebar__blog-item-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight:400;
+    width: 100%;
+    line-height:20px;
+    color: #555;
+    box-sizing:content-box;
+    
+}
+
+.slidebar__blog-item-link:hover{
+    color: #e34444;
+}
+
+
+
+.slidebar_list-item-blog:hover > .slidebar__blog-sublist{
+    display: block;
+    
+}
 
 .content {
 
