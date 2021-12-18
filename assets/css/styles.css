@@ -305,12 +305,12 @@ nav:first-child li:first-child{
 .slider__list-text-name{
     display: block;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-decoration: none;
     line-height: 20px;
     margin-top: -2px;
     margin-bottom: 4px;
-    color: var(--text-color);
+    color: #555;
 }
 
 .slider_list-text-dec{
@@ -778,7 +778,7 @@ position: relative;
       display: block;
 }
 
-/* ////////////CSS for sublist of shop ///////////////////////// */
+/* ////////////CSS for sublist of blog ///////////////////////// */
 
 
 .slidebar__blog-sublist{
@@ -833,16 +833,98 @@ position: relative;
     
 }
 
+.slidebar__blog-item-icon{
+    padding-left: 90px;
+    color: #999; 
+    font-size: 1.3rem;
+    line-height: 20px;
+    text-align: center;
+}
 .slidebar__blog-item-link:hover{
+    color: #e34444;
+} 
+
+.slidebar__blog-last-item:hover .slidebar__blog-item-icon {
     color: #e34444;
 }
 
+.slidebar__blog-last-item:hover .slidebar__blog-item-hover {
+    color: #e34444;
+}
+.slidebar__blog-last-item:hover .slidebar__post-sublist{
+    display: block;
+}
 
 
 .slidebar_list-item-blog:hover > .slidebar__blog-sublist{
     display: block;
     
 }
+
+/* /////CSS for subsublist of blog////////////////////////////////////// */
+
+.slidebar__post-sublist{
+    position: absolute;
+    background-color: #fff;
+    width: 220px;
+    padding:15px 0;
+    top:186px;
+    left:218px;;
+    list-style-type: none;
+    border: 1px solid #eaeaea;
+    z-index: 1;
+    display: none;
+    transform-origin: left top;
+    animation: RiseSlidebar ease-in 0.3s;
+    will-change: opacity, transform;
+}
+
+@keyframes RiseSlidebar {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 80%;
+        opacity: 1;
+    }
+}
+
+.slidebar__post-item{   
+    width:100%;
+    padding:4px 20px; 
+}
+
+.slidebar__post-item-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight:400;
+    width: 100%;
+    line-height:20px;
+    color: #555;
+    box-sizing:content-box;
+    
+}
+
+.slidebar__post-item-icon{
+    padding-left: 90px;
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 20px;
+    text-align: center;
+}
+.slidebar__post-item-link:hover{
+    color: #e34444;
+} 
+ 
+
+.slidebar_list-item-blog:hover > .slidebar__blog-sublist{
+    display: block;
+    
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
 
 .content {
 
