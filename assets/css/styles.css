@@ -926,6 +926,99 @@ position: relative;
 
 /* //////////////////////////////////////////////////////////////////////// */
 
+/* /////////start css shortcodes/////////////////////////////// */
+.slidebar__shortcodes-sublist{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    z-index: 1;
+    /* display:none;  */
+    transform-origin: left top;
+    animation: RiseUpSlidebar ease-in 0.3s;
+    will-change: opacity, transform;
+    
+}
+
+.slidebar__shortcodes-sublist::before{
+    content: "";
+    position: absolute;
+    border:11px solid;
+    top: -21px;
+    left: 523px;
+    border-color: transparent transparent #eaeaea transparent;
+    
+}
+.slidebar__shortcodes-sublist::after{
+    content: "";
+    position: absolute;
+    border:10px solid;
+    top: -19px;
+    left: 524px;
+    border-color: transparent transparent #fff transparent;
+    
+}
+
+.slidebar__shortcodes-sublist-col{
+    display: flex;
+    padding: 20px 15px 0px 15px;
+    margin-left: 0;
+
+}
+
+.slidebar__shortcodes-col-item{
+    width: 33.33%;
+    list-style-type: none;
+}
+
+.slidebar__shortcodes-col-item > h4 {
+    width: 92%;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eaeaea;
+    color: #555;
+    font-weight: bold;
+    margin: 10px 15px 14px;
+}
+
+.slidebar__shortcodes-list{
+    margin-left: 0;
+    padding: 0;
+}
+
+.slidebar__shortcodes-list-item{
+    list-style-type: none;
+}
+
+
+
+.slidebar__shortcodes-list-link{
+    text-decoration: none;
+    padding: 2px 15px;
+    font-size: 1.2rem;
+    line-height: 24px;
+    font-weight: 400;
+
+    color: #333;
+}
+
+.slidebar__shortcodes-img{
+    width: 100%;
+    padding-right: 4%;
+}
+
+.slidebar__shortcodes-list-link:hover{
+    color:#e34444;
+}
+
+.slidebar_list-item-shortcodes:hover .slidebar__shortcodes-sublist{
+      display: block;
+}
+/* ///////////end css shortcodes//////////////////////////////////////// */
+
 .content {
 
 }
