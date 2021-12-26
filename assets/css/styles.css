@@ -651,24 +651,30 @@ position: relative;
     display: flex;
     list-style-type: none;
     padding: 10px 15px 0;
-    
-
-
 }
 
 .slidebar_bedroom-item-contain{
     width:255px;
+    height: 152px;
 }
 
-.slidebar_bedroom-item-contain a img{
+.slidebar__bedroom-item-img{
     width:100%;
-    margin-bottom: 18px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../img/avant-garde-design-studios-furniture-250x150.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
 
+.slidebar__bedroom-item-img:hover {
+    transform: scale(1.2);
 }
 
 .slidebar__bedroom-item-title {
     width:100%;
-    margin:0 0 10px;
+    margin:15px  0 10px 0;
 }
 
 
@@ -935,7 +941,7 @@ position: relative;
     background-color: #fff;
     border: 1px solid #eaeaea;
     z-index: 1;
-    /* display:none;  */
+    /* display:none; */
     transform-origin: left top;
     animation: RiseUpSlidebar ease-in 0.3s;
     will-change: opacity, transform;
@@ -1007,6 +1013,7 @@ position: relative;
 }
 
 .slidebar__shortcodes-img{
+    position: relative;
     height: 246px;
     padding-right: 4%;
     margin-top: -24px;
@@ -1024,30 +1031,30 @@ position: relative;
 }
 
 /* ///////////////start css effects for img of shortcode//////////////////// */
-/* .tl6 {
-    position: relative;
-    width  : 0px;
-    height: 0px;
+.tl6 {
+    position: absolute;
+    width  : 10px;
+    height: 10px;
     background-color:red;
+    margin-right: 0;
     top  : 0px;
     left : 0px;
     transition   : width 2s, height 2s;
-
-  } */
-  
-.tr6 {
-    position: relative;
-    width  : 0px;
-    height: 0px;
-    background-color:red;
-    top  : 0px;
-    left : 365px;
-    transition   : width 2s, height 2s;
- 
   }
   
+.tr6 {
+    position: absolute;
+    width  : 0;
+    height: 0;
+    top:0;
+    left: 365px;
+    background-color:red;
+    transition   : width 2s, height 2s;
+  }
+ 
+
 .br6 {
-    position: relative;
+    position: absolute;
     width  : 0px;
     height: 0px;
     background-color:red;
@@ -1057,15 +1064,17 @@ position: relative;
   }
   
 .bl6 {
-    position: relative;
+    position: absolute;
     width  : 0px;
     height: 0px;
     background-color:red;
     top  : 241px;
     left : 0px;
+    rotateZ(180deg);
     transition   : width 2s, height 2s;
+    z-index: 2;
   }
-  
+
 .slidebar__shortcodes-img:hover .tl6 {
     width :182.5px;
     height : 120.5px;
@@ -1078,7 +1087,7 @@ position: relative;
     
   }
   
-/* .slidebar__shortcodes-img:hover .br6 {
+.slidebar__shortcodes-img:hover .br6 {
     width :182.5px;
     height : 120.5px;
   }
@@ -1086,7 +1095,7 @@ position: relative;
 .slidebar__shortcodes-img:hover .bl6 {
     width :182.5px;
     height : 120.5px;
-  } */
+  }
   
 
 /* ///////////////end css effects for img of shortcode//////////////////// */

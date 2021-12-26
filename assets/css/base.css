@@ -5,10 +5,13 @@
 }
 *{
     box-sizing: inherit;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 body{
     margin: 0px;
+    overflow: hidden;
 }
 
 html{
