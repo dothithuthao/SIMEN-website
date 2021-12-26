@@ -1008,48 +1008,49 @@ position: relative;
     font-size: 1.2rem;
     line-height: 24px;
     font-weight: 400;
-    
     color: #333;
 }
 
 .slidebar__shortcodes-img{
     position: relative;
     height: 246px;
-    padding-right: 4%;
+    margin-right: 4%;
     margin-top: -24px;
     margin-left: 15px;
     background-size: 365px 241px;
     background-repeat: no-repeat;
 }
+ 
+
 
 .slidebar__shortcodes-list-link:hover{
     color:#e34444;
 }
 
-.slidebar_list-item-shortcodes:hover .slidebar__shortcodes-sublist{
-      display: block;
-}
+
 
 /* ///////////////start css effects for img of shortcode//////////////////// */
 .tl6 {
     position: absolute;
-    width  : 10px;
-    height: 10px;
-    background-color:red;
+    width  : 0px;
+    height: 0px;
+    background-color:rgb(136,136,136,0.08);
     margin-right: 0;
     top  : 0px;
     left : 0px;
-    transition   : width 2s, height 2s;
-  }
+    z-index: 2;
+    transition: all 0.6s ease-in-out;
+  } 
   
 .tr6 {
     position: absolute;
     width  : 0;
     height: 0;
     top:0;
-    left: 365px;
-    background-color:red;
-    transition   : width 2s, height 2s;
+    right: 0px;
+    background-color:rgba(136,136,136,0.08);
+    transition: all 0.6s ease-in-out;
+
   }
  
 
@@ -1057,45 +1058,50 @@ position: relative;
     position: absolute;
     width  : 0px;
     height: 0px;
-    background-color:red;
-    top  : 241px;
-    left : 365px;
-    transition   : width 2s, height 2s;
+    background-color:rgba(136,136,136,0.08);
+    bottom  : 0px;
+    right : 0px;
+    transition: all 0.6s ease-in-out;
+
   }
   
 .bl6 {
     position: absolute;
     width  : 0px;
     height: 0px;
-    background-color:red;
-    top  : 241px;
+    background-color:rgba(136,136,136,0.08);
+    bottom : 0;
     left : 0px;
-    rotateZ(180deg);
-    transition   : width 2s, height 2s;
-    z-index: 2;
+    transition: all 0.6s ease-in-out;
+
   }
 
+
+.slidebar__shortcodes-img:hover .slidebar__shortcodes-filter{
+    display: block
+}
 .slidebar__shortcodes-img:hover .tl6 {
-    width :182.5px;
-    height : 120.5px;
+    width :50%;
+    height : 50%;
     
   }
   
 .slidebar__shortcodes-img:hover .tr6 {
-    width :182.5px;
-    height : 120.5px;
+    width :50%;
+    height : 50%;
     
   }
   
 .slidebar__shortcodes-img:hover .br6 {
-    width :182.5px;
-    height : 120.5px;
+    width :50%;
+    height : 50%;
   }
    
 .slidebar__shortcodes-img:hover .bl6 {
-    width :182.5px;
-    height : 120.5px;
-  }
+    width :50%;
+    height : 50%;
+    
+} 
   
 
 /* ///////////////end css effects for img of shortcode//////////////////// */
