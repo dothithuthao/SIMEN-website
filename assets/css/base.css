@@ -47,3 +47,53 @@ html{
     }
         
 }
+
+/* /// Start CSS animation for img from corner to center////// */
+.tl6 {
+    position: absolute;
+    width  : 0px;
+    height: 0px;
+    background-color:rgb(136,136,136,0.08);
+    margin-right: 0;
+    top  : 0px;
+    left : 0px;
+    z-index: 2;
+    transition: all 0.6s ease-in-out;
+  } 
+  
+.tr6 {
+    position: absolute;
+    width  : 0;
+    height: 0;
+    top:0;
+    right: 0px;
+    background-color:rgba(136,136,136,0.08);
+    transition: all 0.6s ease-in-out;
+
+  }
+ 
+
+.br6 {
+    position: absolute;
+    width  : 0px;
+    height: 0px;
+    background-color:rgba(136,136,136,0.08);
+    bottom  : 0px;
+    right : 0px;
+    transition: all 0.6s ease-in-out;
+
+  }
+  
+.bl6 {
+    position: absolute;
+    width  : 0px;
+    height: 0px;
+    background-color:rgba(136,136,136,0.08);
+    bottom : 0;
+    left : 0px;
+    transition: all 0.6s ease-in-out;
+
+  }
+
+
+/* /// End CSS animation for img from corner to center////// */

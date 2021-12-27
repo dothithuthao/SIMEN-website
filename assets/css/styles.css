@@ -620,7 +620,7 @@ position: relative;
    transform-origin: left top;
    animation: RiseUpSlidebar ease-in 0.3s;
    will-change: opacity, transform;
-   display: none;
+   /* display: none; */
 }
 
 .slidebar__bedroom-sublist::before{
@@ -645,6 +645,7 @@ position: relative;
 .slidebar__list-item-bedroom:hover .slidebar__bedroom-sublist{
     display: block;
     display: flex;
+    justify-content: space-evenly
 } 
 
 .slidebar_bedroom-sublist-item{
@@ -653,23 +654,21 @@ position: relative;
     padding: 10px 15px 0;
 }
 
-.slidebar_bedroom-item-contain{
+.slidebar__bedroom-item-figure {
     width:255px;
     height: 152px;
+    overflow: hidden;
 }
 
 .slidebar__bedroom-item-img{
-    width:100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: url("../img/avant-garde-design-studios-furniture-250x150.jpg");
-    background-position: center;
-    background-size: cover;
-    transition: all .5s;
+    width:255px;
+    height: 152px;
+    transition: all .2s linear;
 }
 
 .slidebar__bedroom-item-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    filter: brightness(80%);
 }
 
 .slidebar__bedroom-item-title {
@@ -941,7 +940,7 @@ position: relative;
     background-color: #fff;
     border: 1px solid #eaeaea;
     z-index: 1;
-    /* display:none; */
+    display:none; 
     transform-origin: left top;
     animation: RiseUpSlidebar ease-in 0.3s;
     will-change: opacity, transform;
@@ -1027,55 +1026,17 @@ position: relative;
     color:#e34444;
 }
 
+.slidebar__list-item-shortcodes:hover .slidebar__shortcodes-sublist{
+    display: block;
+}
+
 
 
 /* ///////////////start css effects for img of shortcode//////////////////// */
-.tl6 {
-    position: absolute;
-    width  : 0px;
-    height: 0px;
-    background-color:rgb(136,136,136,0.08);
-    margin-right: 0;
-    top  : 0px;
-    left : 0px;
-    z-index: 2;
-    transition: all 0.6s ease-in-out;
-  } 
-  
-.tr6 {
-    position: absolute;
-    width  : 0;
-    height: 0;
-    top:0;
-    right: 0px;
-    background-color:rgba(136,136,136,0.08);
-    transition: all 0.6s ease-in-out;
 
+  .slidebar__shortcodes-img:hover {
+      filter: grayscale(0) blur(0);
   }
- 
-
-.br6 {
-    position: absolute;
-    width  : 0px;
-    height: 0px;
-    background-color:rgba(136,136,136,0.08);
-    bottom  : 0px;
-    right : 0px;
-    transition: all 0.6s ease-in-out;
-
-  }
-  
-.bl6 {
-    position: absolute;
-    width  : 0px;
-    height: 0px;
-    background-color:rgba(136,136,136,0.08);
-    bottom : 0;
-    left : 0px;
-    transition: all 0.6s ease-in-out;
-
-  }
-
 
 .slidebar__shortcodes-img:hover .slidebar__shortcodes-filter{
     display: block
