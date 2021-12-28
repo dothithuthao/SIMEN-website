@@ -607,7 +607,7 @@ position: relative;
 
 .slidebar__banner-link::before{
     content: "";
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     bottom: 0;
@@ -981,7 +981,7 @@ position: relative;
     background-color: #fff;
     border: 1px solid #eaeaea;
     z-index: 1;
-    display:none; 
+    display:none;
     transform-origin: left top;
     animation: RiseUpSlidebar ease-in 0.3s;
     will-change: opacity, transform;
@@ -1045,20 +1045,23 @@ position: relative;
 .slidebar__shortcodes-list-link{
     text-decoration: none;
     padding: 2px 15px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 24px;
     font-weight: 400;
     color: #333;
 }
 
-.slidebar__shortcodes-img{
+.slidebar__shortcode-img-effect{
+    width: 395px;
+    height:245px;
+    display: block;
     position: relative;
-    height: 246px;
-    margin-right: 4%;
-    margin-top: -24px;
-    margin-left: 15px;
-    background-size: 365px 241px;
-    background-repeat: no-repeat;
+}
+
+.slidebar__shortcodes-img{
+    width: 100%;
+    height: 100%;
+    margin: 0;    
 }
  
 
@@ -1074,37 +1077,39 @@ position: relative;
 
 
 /* ///////////////start css effects for img of shortcode//////////////////// */
-
-  .slidebar__shortcodes-img:hover {
-      filter: grayscale(0) blur(0);
-  }
-
-.slidebar__shortcodes-img:hover .slidebar__shortcodes-filter{
-    display: block
+.slidebar__shortcodes-list-link:hover:before{
+    right: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.2);
 }
-.slidebar__shortcodes-img:hover .tl6 {
-    width :50%;
-    height : 50%;
-    
-  }
-  
-.slidebar__shortcodes-img:hover .tr6 {
-    width :50%;
-    height : 50%;
-    
-  }
-  
-.slidebar__shortcodes-img:hover .br6 {
-    width :50%;
-    height : 50%;
-  }
-   
-.slidebar__shortcodes-img:hover .bl6 {
-    width :50%;
-    height : 50%;
-    
-} 
-  
+
+.slidebar__shortcodes-list-link::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color:beige;  */
+    transition: all 0.6s ease-in-out;
+}
+
+.slidebar__shortcodes-list-link:hover:after{
+    top: 50%;
+    bottom: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.slidebar__shortcodes-list-link::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color:beige;  */
+    transition: all 0.6s ease-in-out;
+}
 
 /* ///////////////end css effects for img of shortcode//////////////////// */
 /* ///////////end css shortcodes//////////////////////////////////////// */
