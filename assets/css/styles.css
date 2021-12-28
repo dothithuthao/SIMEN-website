@@ -586,20 +586,55 @@ position: relative;
    display: flex;
    justify-content: space-evenly;
    padding-bottom:30px ;
-   
-   
-   
+
 }
 
 .slidebar__banner-list{
+    position: relative;
+
+}
+.slidebar__banner-link{
+    position: relative;
+    width: 555px;
+    height: 122px;
+    display:block;
+}
+.slidebar__banner-link:hover:before{
+    right: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.2);
 }
 
-.slidebar__banner-link{
+.slidebar__banner-link::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color:beige; */
+    transition: all 0.6s ease-in-out;
+}
 
+.slidebar__banner-link:hover:after{
+    top: 50%;
+    bottom: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+.slidebar__banner-link::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color:beige; */
+    transition: all 0.6s ease-in-out;
 }
 
 .slidebar__banner-link > img{
-    width: 555px;
+    width: 100%;
+    height:100%;
 
 }
 
@@ -620,7 +655,7 @@ position: relative;
     transform-origin: left top;
     animation: RiseUpSlidebar ease-in 0.3s;
     will-change: opacity, transform;
-   /* display: none; */
+    display: none; 
 }
 
 .slidebar__bedroom-sublist::before{
