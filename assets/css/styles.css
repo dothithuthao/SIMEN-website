@@ -392,7 +392,6 @@ position: relative;
     color: #666;
     width:50px;
     text-align: center;
-    
 }
 
 
@@ -829,7 +828,7 @@ position: relative;
 
 .slidebar__blog-sublist{
     position: absolute;
-    background-color: #fff;
+    background-color: #fff; 
     width: 220px;
     padding:15px 0;
     top:50px;
@@ -981,7 +980,7 @@ position: relative;
     background-color: #fff;
     border: 1px solid #eaeaea;
     z-index: 1;
-    display:none;
+    display:none; 
     transform-origin: left top;
     animation: RiseUpSlidebar ease-in 0.3s;
     will-change: opacity, transform;
@@ -1077,13 +1076,13 @@ position: relative;
 
 
 /* ///////////////start css effects for img of shortcode//////////////////// */
-.slidebar__shortcodes-list-link:hover:before{
+.slidebar__shortcode-img-effect:hover:before{
     right: 50%;
     left: 50%;
     background: rgba(255, 255, 255, 0.2);
 }
 
-.slidebar__shortcodes-list-link::before{
+.slidebar__shortcode-img-effect::before{
     content: "";
     position: absolute;
     top: 0;
@@ -1094,13 +1093,13 @@ position: relative;
     transition: all 0.6s ease-in-out;
 }
 
-.slidebar__shortcodes-list-link:hover:after{
+.slidebar__shortcode-img-effect:hover:after{
     top: 50%;
     bottom: 50%;
     background: rgba(255, 255, 255, 0.2);
 }
 
-.slidebar__shortcodes-list-link::after{
+.slidebar__shortcode-img-effect::after{
     content: "";
     position: absolute;
     top: 0;
@@ -1113,6 +1112,71 @@ position: relative;
 
 /* ///////////////end css effects for img of shortcode//////////////////// */
 /* ///////////end css shortcodes//////////////////////////////////////// */
+
+.slidebar__top-search{
+    position: absolute;
+    background: #fff;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    line-height: 40px;
+    height: 46px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.06s ease;
+    z-index: 999999; 
+    display: block;
+}
+
+.slidebar__right-search:hover {
+    cursor: pointer;
+}
+.slidebar__right-search:hover  +.slidebar__top-search{
+    transform: scale(1);
+    opacity: 1
+} 
+.slidebar__top-search:hover{
+    transform: scale(1);
+    opacity: 1
+}
+.slidebar__input-search{
+    width: 100%;
+    border: none;
+    height: 48px;
+    padding-right: 90px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+
+    background: #fff;
+}
+
+.slidebar__button-search::after{
+    position: absolute;
+    content: "";
+    background: #eaeaea;
+    width: 1px;
+    height: 33px;
+    top: 9px;
+    left: 0;
+}
+.slidebar__button-search{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 20px;
+    height: 50px;
+    background: none !important;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e34444;
+}
+
+.slidebar__button-search:hover {
+    cursor: pointer;
+}
 
 .content {
 
