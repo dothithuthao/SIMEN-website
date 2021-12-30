@@ -1179,9 +1179,12 @@ position: relative;
 }
 
 .content {
-
+height: 20000px;
+overflow: auto;
+}
+.left__content{
+    overflow: auto;
 }
 
 .footer {
-
 }
