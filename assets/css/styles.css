@@ -1203,6 +1203,7 @@ overflow: auto;
     padding: 0;
     margin: 0;
     width:100%;
+    position: relative;
 }
 
 .content__left-firgure-list{
@@ -1271,11 +1272,6 @@ overflow: auto;
     top: 15px;
     transform: scale(1, 0);
 }
-
-
-
-
-
 
 .content__right-top-img{
     width:100%;
@@ -1372,6 +1368,29 @@ overflow: auto;
 }
 
 /* //////end css content__banner/////////////////////// */
+
+/* /////////start css content left checkbox-select/////////// */
+.content__left-firgure-checkbox{
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    bottom: 10px;
+    left:calc(50% - 52px);
+}
+
+.content__left-checkbox-select{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #6a6a6a;
+    margin: 4px;
+    box-sizing: content-box;
+}
+.content__left-checkbox-select:hover{
+    border: 2px solid #e34444;
+    background-color: #e34444;
+}
+
+/* /////////end css content left checkbox-select/////////// */
 
 .left__content{
     overflow: auto;
