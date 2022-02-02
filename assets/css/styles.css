@@ -506,9 +506,6 @@ position: relative;
     
 }
 
-
-
-
 .slidebar__furniture-sublist::before{
     content: "";
     position: absolute;
@@ -1181,6 +1178,7 @@ position: relative;
 .content {
 height: 20000px;
 overflow: auto;
+position: relative;
 }
 
 /* //////start css content__banner/////////////////////// */
@@ -1369,6 +1367,97 @@ overflow: auto;
 
 /* //////end css content__banner/////////////////////// */
 
+/* ////////start css content content_section2///////////// */
+.header__content-section2{
+    display:flex;
+    position: relative;
+    padding-top: 25px;
+   
+}
+
+.header__content-section2::before{
+    position: absolute;
+    content: '';
+    z-index: -1; 
+    height: 1px;
+    width: 100%;
+    background-color: #eaeaea;
+    top: 60px;
+
+}
+.header__content-section-text{
+    display: flex;
+    padding-left: 0;
+    padding-top: 20px;
+    /* background-color: #fff; */
+
+}
+
+.header__content-section-list{
+list-style: none;
+padding: 0 20px;
+border-right: 1px solid #eaeaea;
+text-align: center;
+background: #fff;
+
+}
+
+.header__content-section-list:first-child{
+    padding-left: 0;
+}
+
+.header__content-section-list:last-child{
+    border: none;
+    padding-right: 40px;
+}
+
+.header__content-section-link{
+position: relative;
+text-decoration: none;
+font-size: 1.9rem;
+color: #333;
+text-transform: uppercase;
+font-weight: 400;
+}
+
+.header__content-section-link:after{
+    position: absolute;
+    content: "";
+    z-index: 2;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    display: none;
+}
+
+.header__content-section-link::before{
+    position: absolute;
+    content: "";
+    border:5px solid;
+    top: 23px;
+    left: 45%;
+    z-index: 2;
+    border-color: #000 transparent transparent transparent;
+    display: none;
+}
+
+.header__content-section-list:hover .header__content-section-link::before{
+    display: block;
+}
+
+.header__content-section-list:hover .header__content-section-link::after{
+    display: block;
+}
+
+.header__content-section-list:first-child .header__content-section-link::before{
+    display: block;
+}
+.header__content-section-list:first-child .header__content-section-link::after{
+    display: block;
+}
+/* ////////end css content content_section2///////////// */
 /* /////////start css content left checkbox-select/////////// */
 .content__left-firgure-checkbox{
     position: absolute;
