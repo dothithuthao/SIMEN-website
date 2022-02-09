@@ -43,3 +43,29 @@ html{
         
 }
 
+@keyframes RiseLeft {
+    from {
+        right: -100%;
+        opacity: 0;
+    }
+
+    to {
+        right: 0%;
+        opacity: 1;
+    }
+        
+}
+
+@keyframes RiseRight {
+    from {
+        left: -120%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0%;
+        opacity: 1;
+    }
+        
+}
+
