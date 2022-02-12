@@ -1753,6 +1753,7 @@ visibility: visible;
     color: #e34444;
 }
 
+/* end css hover product */
 .product__btn{
     margin-top: 40px;
     padding-bottom: 56px;
@@ -1775,13 +1776,89 @@ visibility: visible;
     background-color: #e34444;
     color: #fff;
 }
-
+/* start css prodduct__banner-section2 */
 .product__banner-section2{
     height: 421px;
     width: 100%;
     background-color: #f0f0f0;
+    margin-bottom: 55px;
 }
-/* end css hover product */
+
+.product__banner-img{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.product__banner-des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+    padding: 28px;
+}
+
+.product__banner_des-heading{
+    width: 512px;
+    margin-bottom: 90px;
+}
+.product__banner_des-heading h2{
+    font-size: 50px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight:400;
+    margin: 0;
+    margin-bottom: 10px;
+    align-items: center;
+    line-height:65px;
+}
+
+.product__banner_des-heading h4{
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.product__banner_des-heading p{
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2rem;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.product__banner_section2-btn{
+    display: block;
+    width: 114px;
+    height: 34px;
+    background-color: #333;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.product__banner_section2-btn:hover{
+    background-color: #e34444;
+    cursor: pointer;
+}
+
+.product__banner-btn-link{
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 34px;
+}
+/* start css prodduct__banner-section2 */
+
+
 .left__content{
     overflow: auto;
 }
