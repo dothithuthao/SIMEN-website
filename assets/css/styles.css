@@ -1557,6 +1557,7 @@ color: #666;
     color: #f1d200;
 }
 
+
 /* end css conttent sections2 product */
 
 /* start css hover product */
@@ -1920,9 +1921,61 @@ visibility: visible;
     text-align: center;
     padding-bottom: 2px;
     margin: 0;
-    
-
 }
+.nav__tabs-product{
+    position: relative;
+}
+
+.nav__tabs-product:hover .prev{
+    display: block;
+}
+
+.nav__tabs-product:hover .next{
+    display: block;
+}
+
+.prev{
+    position: absolute;
+    left: 12px;
+    top: 115px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #ccc;
+    display: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+.prev:hover{
+    background-color: #e34444;
+    color: #fff;
+}
+
+.next{
+    position: absolute;
+    right: 13px;
+    top: 115px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #ccc;
+    display: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+.next:hover{
+    background-color: #e34444;
+    color: #fff;
+}
+
 
 /*  end css nav tab wapper*/
 .left__content{
