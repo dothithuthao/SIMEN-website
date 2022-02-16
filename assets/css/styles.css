@@ -2125,6 +2125,128 @@ visibility: visible;
     transition: all 0.3s ease-out 0s;
 }
 /* animation banner beach */
+
+/* start css content most view */
+.header__content-mostview{
+    display:flex;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+   
+}
+
+.header__content-mostview::before{
+    position: absolute;
+    content: '';
+    z-index: -1; 
+    height: 1px;
+    width:  92%;
+    background-color: #eaeaea;
+    top: 60px;
+
+
+}
+
+.header__content-mostview-text{
+    display: flex;
+    padding-left: 0;
+    padding-top: 20px;
+
+}
+
+.header__content-mostview-list{
+    list-style: none;
+    padding: 0 20px;
+    padding-left: 0;
+    text-align: center;
+    background: #fff;
+}
+.header__content-mostview-link{
+    position: relative;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.mostview__prev{
+    position: absolute;
+    right: 40px;
+    top: 45px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #ccc;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+
+.mostview__prev:hover{
+    background-color: #e34444;
+    color: #fff;
+}
+
+.mostview__next{
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #ccc;
+    text-align: center;
+    line-height: 30px;
+}
+
+.mostview__next:hover{
+    background-color: #e34444;
+    color: #fff;
+}
+
+.content__mostview-left{
+    position: relative;
+    left: 2px;
+    width: 45%;
+    float: left;
+    padding: 0 10px;
+}
+.content__mostview-img{
+    width: 100%;
+    border: 1px solid #eaeaea;
+
+}
+
+.content__mostview-img:hover{
+    border: 1px solid #e34444;
+}
+.content__mostview-right{
+    width: 55%;
+    float: left;
+    padding: 0 10px;
+}
+
+.content__mostview-cart-link{
+    text-decoration: none;
+    color: #888;
+    display: block;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.content__mostview-cart-link:hover{
+    color: #e34444;
+}
+/* end css content most view */
 /* end css content banner */
 
 .left__content{
