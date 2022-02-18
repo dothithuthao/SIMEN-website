@@ -2125,6 +2125,7 @@ visibility: visible;
     transition: all 0.3s ease-out 0s;
 }
 /* animation banner beach */
+/* end css content banner */
 
 /* start css content most view */
 .header__content-mostview{
@@ -2212,6 +2213,9 @@ visibility: visible;
     color: #fff;
 }
 
+.content__mostview{
+    margin-bottom: 53px;
+}
 .content__mostview-left{
     position: relative;
     left: 2px;
@@ -2247,8 +2251,48 @@ visibility: visible;
     color: #e34444;
 }
 /* end css content most view */
-/* end css content banner */
 
+/* start css content__lastestpost  */
+.content__latestpost{
+    display: flex;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
+
+.content__latestpost::before{
+    position: absolute;
+    content: '';
+    z-index: -1; 
+    height: 1px;
+    width:  92%;
+    background-color: #eaeaea;
+    top: 5px;
+}
+
+.content__latestpost-header{
+
+}
+
+.content__latestpost-header-list{
+    list-style: none;
+    padding: 0 20px;
+    padding-left: 0;
+    text-align: center;
+    background: #fff;
+}
+
+.content__latestpost-header-link{
+    position: relative;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* start css content__lastestpost  */
 .left__content{
     overflow: auto;
 }
