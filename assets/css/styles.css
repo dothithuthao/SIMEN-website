@@ -2144,8 +2144,6 @@ visibility: visible;
     width:  92%;
     background-color: #eaeaea;
     top: 60px;
-
-
 }
 
 .header__content-mostview-text{
@@ -2256,8 +2254,7 @@ visibility: visible;
 .content__latestpost{
     display: flex;
     position: relative;
-    margin-top: 6px;
-    margin-bottom: 25px;
+    
 }
 
 .content__latestpost::before{
@@ -2271,7 +2268,19 @@ visibility: visible;
 }
 
 .content__latestpost-header{
-
+    display:flex;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.content__latestpost-header::before{
+    position: absolute;
+    content: '';
+    z-index: -1; 
+    height: 1px;
+    width:  92%;
+    background-color: #eaeaea;
+    top: 60px;
 }
 
 .content__latestpost-header-list{
@@ -2291,7 +2300,8 @@ visibility: visible;
     font-weight: 700;
 }
 
-
+.content__lastestpost-product{
+}
 /* start css content__lastestpost  */
 .left__content{
     overflow: auto;
